@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+@media only screen and (max-width: 1450px) {
+    header {
+        position: relative;
+        padding: 20px 0 0 20px;
+        margin-bottom: 50px;
+    }
+    #main-content {
+        display: flex;
+        position: relative;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+    }
+    #main-content img {
+        position: relative;
+        width: 45%;
+        height: 400px;
+    }
+    #main-content #info-error {
+        position: absolute;
+        width: 40%;
+        right: 0;
+        top: 0;
+    }
+    #info-error h1 {
+        font-size: 50px;
+        margin-bottom: 35px;
+        line-height: 1.5;
+    }
+    #info-error p {
+        font-size: 20px;
+        line-height: 1.5;
+        color: #222;
+    }
+    #back-home {
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        background-color: #222;
+        padding: 15px 20px;
+        margin: 35px 0 0 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    #back-home:hover{
+        background-color: #303030;
+    }
+    footer {
+        margin-top: 90px;
+        text-align: center;
+    }
+    footer h3{
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    header h1 {
+        font-size: 25px;
+    }
+    #main-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    #scarecrow {
+        width: 100% !important;
+    }
+    #info-error {
+        width: 90% !important;
+        position: relative !important;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 25px;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: #111;
+    }
+    footer h3 {
+        padding: 20px 0;
+    }
+}
