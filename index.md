@@ -1,3 +1,3 @@
 ---
-permalink: 404-not-found.html
+permalink: index.html
 ---
