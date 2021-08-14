@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+header {
+    position: relative;
+    padding: 20px 0 0 20px;
+    margin-bottom: 50px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page-title-container {
+    margin: 2.5rem 0;
+}
+
+.page-title-container__title {
+    font-size: 4.2rem;
+}
+
+.center-container {
+    display: flex;
+    position: relative;
+    margin: 2.5rem 0;
+}
+
+.center-container__scarecrow-img {
+    width: 70%;
+    object-fit: cover;
+}
+
+.center-container__info-error {
+    margin-left: 4rem;
+}
+
+.info-error__h1 {
+    display: inline-block;
+    font-size: 4.2rem;
+    width: 75%;
+    line-height: 2;
+}
+
+.info-error__paragraph {
+    font-size: 2.2rem;
+    margin: 2rem 0;
+}
+
+.back-home-button {
+    margin: 4rem 0;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #000000d2;
+    border: none;
+    position: relative;
+}
+
+.back-home-button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.144);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.back-home-button:hover::before {
+    height: 100%;
+    border-radius: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1950px) {
+    .main-container {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 765px) {
+    .main-container {
+        width: 92.5%;
+    }
+    .center-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .center-container__scarecrow-img {
+        width: 100%;
+    }
+    .page-title-container__title {
+        font-size: 2rem;
+    }
+    .center-container__info-error {
+        margin: 0;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .info-error__h1 {
+        font-size: 2rem;
+    }
+    .info-error__paragraph {
+        font-size: 1.4rem;
+    }
+    .footer__title {
+        text-align: center;
+    }
+}
